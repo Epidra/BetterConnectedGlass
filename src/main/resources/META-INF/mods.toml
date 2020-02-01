@@ -2,23 +2,23 @@ modLoader="javafml"
 loaderVersion="[31,)" #mandatory (26 is current forge version)
 issueTrackerURL="https://github.com/Epidra/BetterConnectedGlass/issues"
 [[mods]]
-modId="betterglass"
+modId="connectedglass"
 version="v01"
-displayName="BetterConnectedGlass" #mandatory
-displayURL="https://www.curseforge.com/minecraft/mc-mods/betterglass"
-logoFile="betterglass.png"
+displayName="DoubleConnectedGlass" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/doubleconnectedglass"
+logoFile="connectedglass.png"
 credits="Thanks for this example mod goes to Java" #optional
 authors="Love, Cheese and small house plants" #optional
 description='''
 Connects glass Blocks in a different way
 '''
-[[dependencies.betterglass]]
+[[dependencies.connectedglass]]
     modId="forge"
     mandatory=true
     versionRange="[31,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.betterglass]]
+[[dependencies.connectedglass]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.15.2]"
