@@ -1,4 +1,4 @@
-package mod.betterglass;
+package mod.connectedglass;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.common.MinecraftForge;
@@ -6,12 +6,12 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod("betterglass")
-public class BetterConnectedGlass {
+@Mod("connectedglass")
+public class DoubleConnectedGlass {
 
-    public static final String MODID = "betterglass";
+    public static final String MODID = "connectedglass";
 
-    public BetterConnectedGlass() {
+    public DoubleConnectedGlass() {
         MinecraftForge.EVENT_BUS.register(this);
     }
 

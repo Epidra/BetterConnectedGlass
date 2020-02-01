@@ -1,17 +1,18 @@
-package mod.betterglass.blocks;
+package mod.connectedglass.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.PaneBlock;
+import net.minecraft.block.StainedGlassPaneBlock;
+import net.minecraft.item.DyeColor;
 import net.minecraft.util.Direction;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class BlockPane extends PaneBlock {
+public class BlockPaneStained extends StainedGlassPaneBlock {
 
     /** Contructor with predefined BlockProperty */
-    public BlockPane(String modid, String name, Block block) {
-        super(Properties.from(block));
+    public BlockPaneStained(String modid, String name, Block block, DyeColor dyecolor) {
+        super(dyecolor, Properties.from(block));
         this.setRegistryName(modid, name);
     }
 

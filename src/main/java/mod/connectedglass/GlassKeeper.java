@@ -1,9 +1,9 @@
-package mod.betterglass;
+package mod.connectedglass;
 
-import mod.betterglass.blocks.BlockGlass;
-import mod.betterglass.blocks.BlockGlassStained;
-import mod.betterglass.blocks.BlockPane;
-import mod.betterglass.blocks.BlockPaneStained;
+import mod.connectedglass.blocks.BlockGlass;
+import mod.connectedglass.blocks.BlockGlassStained;
+import mod.connectedglass.blocks.BlockPane;
+import mod.connectedglass.blocks.BlockPaneStained;
 import mod.shared.Register;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
