@@ -3,7 +3,7 @@ loaderVersion="[31,)" #mandatory (26 is current forge version)
 issueTrackerURL="https://github.com/Epidra/BetterConnectedGlass/issues"
 [[mods]]
 modId="connectedglass"
-version="v01"
+version="v02"
 displayName="DoubleConnectedGlass" #mandatory
 displayURL="https://www.curseforge.com/minecraft/mc-mods/doubleconnectedglass"
 logoFile="connectedglass.png"
