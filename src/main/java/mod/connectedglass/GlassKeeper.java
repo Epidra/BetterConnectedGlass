@@ -68,23 +68,23 @@ public class GlassKeeper {
         Register.registerBlock(BLOCK_GLASS_RED       , ItemGroup.BUILDING_BLOCKS);
         Register.registerBlock(BLOCK_GLASS_BLACK     , ItemGroup.BUILDING_BLOCKS);
 
-        Register.registerBlock(BLOCK_PANE_CLEAR     , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_WHITE     , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_ORANGE    , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_MAGENTA   , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_LIGHT_BLUE, ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_YELLOW    , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_LIME      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_PINK      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_GRAY      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_LIGHT_GRAY, ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_CYAN      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_PURPLE    , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_BLUE      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_BROWN     , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_GREEN     , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_RED       , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_PANE_BLACK     , ItemGroup.BUILDING_BLOCKS);
+        Register.registerBlock(BLOCK_PANE_CLEAR     , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_WHITE     , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_ORANGE    , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_MAGENTA   , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_LIGHT_BLUE, ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_YELLOW    , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_LIME      , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_PINK      , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_GRAY      , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_LIGHT_GRAY, ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_CYAN      , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_PURPLE    , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_BLUE      , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_BROWN     , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_GREEN     , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_RED       , ItemGroup.DECORATIONS);
+        Register.registerBlock(BLOCK_PANE_BLACK     , ItemGroup.DECORATIONS);
     }
 
 }
