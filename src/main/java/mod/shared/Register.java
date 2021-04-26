@@ -10,13 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class Register {
 
-    /** registers Block and corresponding ItemBlock to ForgeRegistries */
-    public static void registerBlock(Block block, ItemGroup group){
-        ForgeRegistries.BLOCKS.register(block);
-        BlockItem itemblock = new BlockItem(block, (new Item.Properties()).group(group));
-        itemblock.setRegistryName(block.getRegistryName());
-        ForgeRegistries.ITEMS.register(itemblock);
-    }
+
 
     /** registers Block and corresponding ItemBlock to ForgeRegistries */
     public static void registerBlock(Block block){

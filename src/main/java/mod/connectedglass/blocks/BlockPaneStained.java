@@ -12,23 +12,23 @@ public class BlockPaneStained extends StainedGlassPaneBlock {
 
     /** Contructor with predefined BlockProperty */
     public BlockPaneStained(String modid, String name, Block block, DyeColor dyecolor) {
-        super(dyecolor, Properties.from(block));
+        super(dyecolor, Properties.copy(block));
         this.setRegistryName(modid, name);
     }
 
     @OnlyIn(Dist.CLIENT)
-    public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
+    public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
         if ((adjacentBlockState.getBlock() instanceof BlockPane || adjacentBlockState.getBlock() instanceof BlockPaneStained)) {
             if (!side.getAxis().isHorizontal()) {
                 return true;
             }
 
-            if (state.get(FACING_TO_PROPERTY_MAP.get(side)) && adjacentBlockState.get(FACING_TO_PROPERTY_MAP.get(side.getOpposite()))) {
+            if (state.getValue(PROPERTY_BY_DIRECTION.get(side)) && adjacentBlockState.getValue(PROPERTY_BY_DIRECTION.get(side.getOpposite()))) {
                 return true;
             }
         }
 
-        return super.isSideInvisible(state, adjacentBlockState, side);
+        return super.skipRendering(state, adjacentBlockState, side);
     }
 
 }

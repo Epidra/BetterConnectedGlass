@@ -7,8 +7,11 @@ import mod.connectedglass.blocks.BlockPaneStained;
 import mod.shared.Register;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.DyeColor;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class GlassKeeper {
 
@@ -50,41 +53,49 @@ public class GlassKeeper {
 
     public static void registerBlocks() {
         // Blocks
-        Register.registerBlock(BLOCK_GLASS_CLEAR     , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_WHITE     , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_ORANGE    , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_MAGENTA   , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_LIGHT_BLUE, ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_YELLOW    , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_LIME      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_PINK      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_GRAY      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_LIGHT_GRAY, ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_CYAN      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_PURPLE    , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_BLUE      , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_BROWN     , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_GREEN     , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_RED       , ItemGroup.BUILDING_BLOCKS);
-        Register.registerBlock(BLOCK_GLASS_BLACK     , ItemGroup.BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_CLEAR     , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_WHITE     , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_ORANGE    , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_MAGENTA   , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_LIGHT_BLUE, ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_YELLOW    , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_LIME      , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_PINK      , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_GRAY      , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_LIGHT_GRAY, ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_CYAN      , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_PURPLE    , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_BLUE      , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_BROWN     , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_GREEN     , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_RED       , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_BLACK     , ItemGroup.TAB_BUILDING_BLOCKS);
 
-        Register.registerBlock(BLOCK_PANE_CLEAR     , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_WHITE     , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_ORANGE    , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_MAGENTA   , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_LIGHT_BLUE, ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_YELLOW    , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_LIME      , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_PINK      , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_GRAY      , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_LIGHT_GRAY, ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_CYAN      , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_PURPLE    , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_BLUE      , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_BROWN     , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_GREEN     , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_RED       , ItemGroup.DECORATIONS);
-        Register.registerBlock(BLOCK_PANE_BLACK     , ItemGroup.DECORATIONS);
+        registerBlock(BLOCK_PANE_CLEAR     , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_WHITE     , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_ORANGE    , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_MAGENTA   , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_LIGHT_BLUE, ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_YELLOW    , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_LIME      , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_PINK      , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_GRAY      , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_LIGHT_GRAY, ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_CYAN      , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_PURPLE    , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_BLUE      , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_BROWN     , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_GREEN     , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_RED       , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_BLACK     , ItemGroup.TAB_DECORATIONS);
+    }
+
+    /** registers Block and corresponding ItemBlock to ForgeRegistries */
+    public static void registerBlock(Block block, ItemGroup group){
+        ForgeRegistries.BLOCKS.register(block);
+        BlockItem itemblock = new BlockItem(block, (new Item.Properties()).tab(group));
+        itemblock.setRegistryName(block.getRegistryName());
+        ForgeRegistries.ITEMS.register(itemblock);
     }
 
 }

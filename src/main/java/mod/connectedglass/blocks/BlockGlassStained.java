@@ -12,13 +12,13 @@ public class BlockGlassStained extends StainedGlassBlock {
 
     /** Contructor with predefined BlockProperty */
     public BlockGlassStained(String modid, String name, Block block, DyeColor dyecolor) {
-        super(dyecolor, Properties.from(block));
+        super(dyecolor, Properties.copy(block));
         this.setRegistryName(modid, name);
     }
 
     @OnlyIn(Dist.CLIENT)
-    public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
-        return (adjacentBlockState.getBlock() instanceof BlockGlass || adjacentBlockState.getBlock() instanceof BlockGlassStained) ? true : super.isSideInvisible(state, adjacentBlockState, side);
+    public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
+        return adjacentBlockState.getBlock() instanceof BlockGlass || adjacentBlockState.getBlock() instanceof BlockGlassStained || super.skipRendering(state, adjacentBlockState, side);
     }
 
 }
