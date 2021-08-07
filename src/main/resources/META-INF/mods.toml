@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[35,)" #mandatory
+loaderVersion="[37,)" #mandatory
 license="All rights reserved"
 issueTrackerURL="https://github.com/Epidra/BetterConnectedGlass/issues"
 [[mods]]
 modId="connectedglass"
-version="v03"
+version="3.0"
 displayName="DoubleConnectedGlass" #mandatory
 displayURL="https://www.curseforge.com/minecraft/mc-mods/doubleconnectedglass"
 logoFile="logo.png"
@@ -16,6 +16,6 @@ Connects glass Blocks in a different way
 [[dependencies.connectedglass]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.4]"
+    versionRange="[1.17.1,1.18)"
     ordering="NONE"
     side="BOTH"

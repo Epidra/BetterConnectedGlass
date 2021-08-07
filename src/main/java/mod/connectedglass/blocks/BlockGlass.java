@@ -1,9 +1,9 @@
 package mod.connectedglass.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.GlassBlock;
-import net.minecraft.util.Direction;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.GlassBlock;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 

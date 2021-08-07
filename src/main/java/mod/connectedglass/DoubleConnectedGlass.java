@@ -1,6 +1,6 @@
 package mod.connectedglass;
 
-import net.minecraft.block.Block;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

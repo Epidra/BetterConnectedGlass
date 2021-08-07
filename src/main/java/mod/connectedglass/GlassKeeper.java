@@ -4,13 +4,12 @@ import mod.connectedglass.blocks.BlockGlass;
 import mod.connectedglass.blocks.BlockGlassStained;
 import mod.connectedglass.blocks.BlockPane;
 import mod.connectedglass.blocks.BlockPaneStained;
-import mod.shared.Register;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.DyeColor;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class GlassKeeper {
@@ -53,45 +52,45 @@ public class GlassKeeper {
 
     public static void registerBlocks() {
         // Blocks
-        registerBlock(BLOCK_GLASS_CLEAR     , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_WHITE     , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_ORANGE    , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_MAGENTA   , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_LIGHT_BLUE, ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_YELLOW    , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_LIME      , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_PINK      , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_GRAY      , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_LIGHT_GRAY, ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_CYAN      , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_PURPLE    , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_BLUE      , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_BROWN     , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_GREEN     , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_RED       , ItemGroup.TAB_BUILDING_BLOCKS);
-        registerBlock(BLOCK_GLASS_BLACK     , ItemGroup.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_CLEAR     , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_WHITE     , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_ORANGE    , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_MAGENTA   , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_LIGHT_BLUE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_YELLOW    , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_LIME      , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_PINK      , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_GRAY      , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_LIGHT_GRAY, CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_CYAN      , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_PURPLE    , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_BLUE      , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_BROWN     , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_GREEN     , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_RED       , CreativeModeTab.TAB_BUILDING_BLOCKS);
+        registerBlock(BLOCK_GLASS_BLACK     , CreativeModeTab.TAB_BUILDING_BLOCKS);
 
-        registerBlock(BLOCK_PANE_CLEAR     , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_WHITE     , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_ORANGE    , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_MAGENTA   , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_LIGHT_BLUE, ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_YELLOW    , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_LIME      , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_PINK      , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_GRAY      , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_LIGHT_GRAY, ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_CYAN      , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_PURPLE    , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_BLUE      , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_BROWN     , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_GREEN     , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_RED       , ItemGroup.TAB_DECORATIONS);
-        registerBlock(BLOCK_PANE_BLACK     , ItemGroup.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_CLEAR     , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_WHITE     , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_ORANGE    , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_MAGENTA   , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_LIGHT_BLUE, CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_YELLOW    , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_LIME      , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_PINK      , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_GRAY      , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_LIGHT_GRAY, CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_CYAN      , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_PURPLE    , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_BLUE      , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_BROWN     , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_GREEN     , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_RED       , CreativeModeTab.TAB_DECORATIONS);
+        registerBlock(BLOCK_PANE_BLACK     , CreativeModeTab.TAB_DECORATIONS);
     }
 
     /** registers Block and corresponding ItemBlock to ForgeRegistries */
-    public static void registerBlock(Block block, ItemGroup group){
+    public static void registerBlock(Block block, CreativeModeTab group){
         ForgeRegistries.BLOCKS.register(block);
         BlockItem itemblock = new BlockItem(block, (new Item.Properties()).tab(group));
         itemblock.setRegistryName(block.getRegistryName());

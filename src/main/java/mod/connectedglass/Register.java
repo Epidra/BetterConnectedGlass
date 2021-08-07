@@ -1,11 +1,10 @@
-package mod.shared;
+package mod.connectedglass;
 
-import net.minecraft.block.Block;
-import net.minecraft.entity.Entity;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class Register {
@@ -31,8 +30,8 @@ public class Register {
         ForgeRegistries.ITEMS.register(item);
     }
 
-    public static void registerTileEntite(TileEntity tileentity){
-        ForgeRegistries.TILE_ENTITIES.register(tileentity.getType());
+    public static void registerTileEntite(BlockEntity tileentity){
+        ForgeRegistries.BLOCK_ENTITIES.register(tileentity.getType());
     }
 
     public static void registerEntity(Entity entity){
