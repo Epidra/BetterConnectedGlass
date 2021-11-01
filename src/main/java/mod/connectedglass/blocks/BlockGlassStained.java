@@ -10,15 +10,31 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BlockGlassStained extends StainedGlassBlock {
 
+    // ...
+
+
+
+
+
+    //----------------------------------------CONSTRUCTOR----------------------------------------//
+
     /** Contructor with predefined BlockProperty */
     public BlockGlassStained(String modid, String name, Block block, DyeColor dyecolor) {
         super(dyecolor, Properties.copy(block));
         this.setRegistryName(modid, name);
     }
 
+
+
+
+
+    //----------------------------------------SUPPORT----------------------------------------//
+
     @OnlyIn(Dist.CLIENT)
     public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
         return adjacentBlockState.getBlock() instanceof BlockGlass || adjacentBlockState.getBlock() instanceof BlockGlassStained || super.skipRendering(state, adjacentBlockState, side);
     }
+
+
 
 }

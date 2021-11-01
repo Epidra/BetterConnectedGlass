@@ -15,6 +15,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class GlassKeeper {
 
+    // ...
+
+
+
+
+
+    // Blocks
     public static final Block BLOCK_GLASS_CLEAR      = new BlockGlass("minecraft", "glass", Blocks.GLASS);
     public static final Block BLOCK_GLASS_WHITE      = new BlockGlassStained("minecraft", "white_stained_glass",      Blocks.WHITE_STAINED_GLASS,      DyeColor.WHITE);
     public static final Block BLOCK_GLASS_ORANGE     = new BlockGlassStained("minecraft", "orange_stained_glass",     Blocks.ORANGE_STAINED_GLASS,     DyeColor.ORANGE);
@@ -33,6 +40,7 @@ public class GlassKeeper {
     public static final Block BLOCK_GLASS_RED        = new BlockGlassStained("minecraft", "red_stained_glass",        Blocks.RED_STAINED_GLASS,        DyeColor.RED);
     public static final Block BLOCK_GLASS_BLACK      = new BlockGlassStained("minecraft", "black_stained_glass",      Blocks.BLACK_STAINED_GLASS,      DyeColor.BLACK);
 
+    // Panes
     public static final Block BLOCK_PANE_CLEAR      = new BlockPane("minecraft", "glass_pane", Blocks.GLASS);
     public static final Block BLOCK_PANE_WHITE      = new BlockPaneStained("minecraft", "white_stained_glass_pane",      Blocks.WHITE_STAINED_GLASS_PANE,      DyeColor.WHITE);
     public static final Block BLOCK_PANE_ORANGE     = new BlockPaneStained("minecraft", "orange_stained_glass_pane",     Blocks.ORANGE_STAINED_GLASS_PANE,     DyeColor.ORANGE);
@@ -51,8 +59,15 @@ public class GlassKeeper {
     public static final Block BLOCK_PANE_RED        = new BlockPaneStained("minecraft", "red_stained_glass_pane",        Blocks.RED_STAINED_GLASS_PANE,        DyeColor.RED);
     public static final Block BLOCK_PANE_BLACK      = new BlockPaneStained("minecraft", "black_stained_glass_pane",      Blocks.BLACK_STAINED_GLASS_PANE,      DyeColor.BLACK);
 
+
+
+
+
+    //----------------------------------------REGISTER----------------------------------------//
+
     public static void registerBlocks() {
-        // Blocks
+
+        // ----- Blocks ----- //
         registerBlock(BLOCK_GLASS_CLEAR     , ItemGroup.TAB_BUILDING_BLOCKS);
         registerBlock(BLOCK_GLASS_WHITE     , ItemGroup.TAB_BUILDING_BLOCKS);
         registerBlock(BLOCK_GLASS_ORANGE    , ItemGroup.TAB_BUILDING_BLOCKS);
@@ -71,6 +86,7 @@ public class GlassKeeper {
         registerBlock(BLOCK_GLASS_RED       , ItemGroup.TAB_BUILDING_BLOCKS);
         registerBlock(BLOCK_GLASS_BLACK     , ItemGroup.TAB_BUILDING_BLOCKS);
 
+        // ----- Panes ----- //
         registerBlock(BLOCK_PANE_CLEAR     , ItemGroup.TAB_DECORATIONS);
         registerBlock(BLOCK_PANE_WHITE     , ItemGroup.TAB_DECORATIONS);
         registerBlock(BLOCK_PANE_ORANGE    , ItemGroup.TAB_DECORATIONS);
@@ -97,5 +113,7 @@ public class GlassKeeper {
         itemblock.setRegistryName(block.getRegistryName());
         ForgeRegistries.ITEMS.register(itemblock);
     }
+
+
 
 }

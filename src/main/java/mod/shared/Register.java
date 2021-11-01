@@ -4,13 +4,18 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class Register {
 
+    // ...
 
+
+
+
+
+    //----------------------------------------REGISTER----------------------------------------//
 
     /** registers Block and corresponding ItemBlock to ForgeRegistries */
     public static void registerBlock(Block block){
@@ -38,5 +43,7 @@ public class Register {
     public static void registerEntity(Entity entity){
         ForgeRegistries.ENTITIES.register(entity.getType());
     }
+
+
 
 }
