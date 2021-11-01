@@ -48,8 +48,15 @@ public class GlassKeeper {
     public static final Block BLOCK_PANE_RED        = new BlockPaneStained("minecraft", "red_stained_glass_pane",        Blocks.RED_STAINED_GLASS_PANE,        DyeColor.RED);
     public static final Block BLOCK_PANE_BLACK      = new BlockPaneStained("minecraft", "black_stained_glass_pane",      Blocks.BLACK_STAINED_GLASS_PANE,      DyeColor.BLACK);
 
+
+
+
+
+    //----------------------------------------REGISTER----------------------------------------//
+
     public static void registerBlocks() {
-        // Blocks
+
+        // ----- Blocks ----- //
         Register.registerBlock(BLOCK_GLASS_CLEAR     , ItemGroup.BUILDING_BLOCKS);
         Register.registerBlock(BLOCK_GLASS_WHITE     , ItemGroup.BUILDING_BLOCKS);
         Register.registerBlock(BLOCK_GLASS_ORANGE    , ItemGroup.BUILDING_BLOCKS);
@@ -68,6 +75,7 @@ public class GlassKeeper {
         Register.registerBlock(BLOCK_GLASS_RED       , ItemGroup.BUILDING_BLOCKS);
         Register.registerBlock(BLOCK_GLASS_BLACK     , ItemGroup.BUILDING_BLOCKS);
 
+        // ----- Panes ----- //
         Register.registerBlock(BLOCK_PANE_CLEAR     , ItemGroup.DECORATIONS);
         Register.registerBlock(BLOCK_PANE_WHITE     , ItemGroup.DECORATIONS);
         Register.registerBlock(BLOCK_PANE_ORANGE    , ItemGroup.DECORATIONS);
@@ -86,5 +94,7 @@ public class GlassKeeper {
         Register.registerBlock(BLOCK_PANE_RED       , ItemGroup.DECORATIONS);
         Register.registerBlock(BLOCK_PANE_BLACK     , ItemGroup.DECORATIONS);
     }
+
+
 
 }

@@ -11,9 +11,21 @@ public class DoubleConnectedGlass {
 
     public static final String MODID = "connectedglass";
 
+
+
+
+
+    //----------------------------------------CONSTRUCTOR----------------------------------------//
+
     public DoubleConnectedGlass() {
         MinecraftForge.EVENT_BUS.register(this);
     }
+
+
+
+
+
+    //----------------------------------------REGISTER----------------------------------------//
 
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
@@ -22,5 +34,7 @@ public class DoubleConnectedGlass {
             GlassKeeper.registerBlocks();
         }
     }
+
+
 
 }
