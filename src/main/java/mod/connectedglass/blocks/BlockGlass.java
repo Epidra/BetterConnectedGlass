@@ -9,15 +9,31 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BlockGlass extends GlassBlock {
 
+    // ...
+
+
+
+
+
+    //----------------------------------------CONSTRUCTOR----------------------------------------//
+
     /** Contructor with predefined BlockProperty */
     public BlockGlass(String modid, String name, Block block) {
         super(Properties.from(block));
         this.setRegistryName(modid, name);
     }
 
+
+
+
+
+    //----------------------------------------SUPPORT----------------------------------------//
+
     @OnlyIn(Dist.CLIENT)
     public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
         return (adjacentBlockState.getBlock() instanceof BlockGlass || adjacentBlockState.getBlock() instanceof BlockGlassStained) ? true : super.isSideInvisible(state, adjacentBlockState, side);
     }
+
+
 
 }

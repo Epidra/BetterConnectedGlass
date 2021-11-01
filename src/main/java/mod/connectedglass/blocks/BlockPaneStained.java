@@ -10,11 +10,25 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BlockPaneStained extends StainedGlassPaneBlock {
 
+    // ...
+
+
+
+
+
+    //----------------------------------------CONSTRUCTOR----------------------------------------//
+
     /** Contructor with predefined BlockProperty */
     public BlockPaneStained(String modid, String name, Block block, DyeColor dyecolor) {
         super(dyecolor, Properties.from(block));
         this.setRegistryName(modid, name);
     }
+
+
+
+
+
+    //----------------------------------------SUPPORT----------------------------------------//
 
     @OnlyIn(Dist.CLIENT)
     public boolean isSideInvisible(BlockState state, BlockState adjacentBlockState, Direction side) {
@@ -30,5 +44,7 @@ public class BlockPaneStained extends StainedGlassPaneBlock {
 
         return super.isSideInvisible(state, adjacentBlockState, side);
     }
+
+
 
 }
