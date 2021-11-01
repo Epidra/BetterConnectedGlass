@@ -9,11 +9,25 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class BlockPane extends IronBarsBlock {
 
+    // ...
+
+
+
+
+
+    //----------------------------------------CONSTRUCTOR----------------------------------------//
+
     /** Contructor with predefined BlockProperty */
     public BlockPane(String modid, String name, Block block) {
         super(Properties.copy(block));
         this.setRegistryName(modid, name);
     }
+
+
+
+
+
+    //----------------------------------------SUPPORT----------------------------------------//
 
     @OnlyIn(Dist.CLIENT)
     public boolean skipRendering(BlockState state, BlockState adjacentBlockState, Direction side) {
@@ -29,5 +43,7 @@ public class BlockPane extends IronBarsBlock {
 
         return super.skipRendering(state, adjacentBlockState, side);
     }
+
+
 
 }

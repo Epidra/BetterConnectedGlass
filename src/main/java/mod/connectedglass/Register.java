@@ -9,7 +9,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class Register {
 
+    // ...
 
+
+
+
+
+    //----------------------------------------REGISTER----------------------------------------//
 
     /** registers Block and corresponding ItemBlock to ForgeRegistries */
     public static void registerBlock(Block block){
@@ -37,5 +43,7 @@ public class Register {
     public static void registerEntity(Entity entity){
         ForgeRegistries.ENTITIES.register(entity.getType());
     }
+
+
 
 }
