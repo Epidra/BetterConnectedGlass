@@ -18,9 +18,8 @@ public class BlockGlass extends GlassBlock {
     //----------------------------------------CONSTRUCTOR----------------------------------------//
 
     /** Contructor with predefined BlockProperty */
-    public BlockGlass(String modid, String name, Block block) {
+    public BlockGlass(Block block) {
         super(Properties.copy(block));
-        this.setRegistryName(modid, name);
     }
 
 

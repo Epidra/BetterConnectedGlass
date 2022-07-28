@@ -19,9 +19,8 @@ public class BlockGlassStained extends StainedGlassBlock {
     //----------------------------------------CONSTRUCTOR----------------------------------------//
 
     /** Contructor with predefined BlockProperty */
-    public BlockGlassStained(String modid, String name, Block block, DyeColor dyecolor) {
+    public BlockGlassStained(Block block, DyeColor dyecolor) {
         super(dyecolor, Properties.copy(block));
-        this.setRegistryName(modid, name);
     }
 
 
