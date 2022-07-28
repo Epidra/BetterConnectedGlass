@@ -18,9 +18,8 @@ public class BlockPane extends IronBarsBlock {
     //----------------------------------------CONSTRUCTOR----------------------------------------//
 
     /** Contructor with predefined BlockProperty */
-    public BlockPane(String modid, String name, Block block) {
+    public BlockPane(Block block) {
         super(Properties.copy(block));
-        this.setRegistryName(modid, name);
     }
 
 

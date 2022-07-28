@@ -19,9 +19,8 @@ public class BlockPaneStained extends StainedGlassPaneBlock {
     //----------------------------------------CONSTRUCTOR----------------------------------------//
 
     /** Contructor with predefined BlockProperty */
-    public BlockPaneStained(String modid, String name, Block block, DyeColor dyecolor) {
+    public BlockPaneStained(Block block, DyeColor dyecolor) {
         super(dyecolor, Properties.copy(block));
-        this.setRegistryName(modid, name);
     }
 
 
