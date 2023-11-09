@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[41,)" #mandatory
+loaderVersion="[47,)" #mandatory
 license="All rights reserved"
 issueTrackerURL="https://github.com/Epidra/BetterConnectedGlass/issues"
 [[mods]]
@@ -16,6 +16,6 @@ Connects glass Blocks in a different way
 [[dependencies.connectedglass]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.20)"
+    versionRange="[1.20.1,1.21)"
     ordering="NONE"
     side="BOTH"
